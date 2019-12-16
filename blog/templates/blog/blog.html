@@ -1,0 +1,62 @@
+{% extends "blog/base.html" %}
+	{% load static %}
+	{% block content %}
+
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Main section start -->
+	<div class="main-site-warp">
+		{% include 'blog/menu.tpl' %}	
+		{% include 'blog/header_content.tpl' %}
+		{% include 'blog/left_side.tpl' %}
+
+			<!-- Page start -->
+			<div class="page-section blog-page">
+				<div class="blog-posts">
+					<div class="blog-post-item">
+						<div class="blog-thumb set-bg" data-setbg="{% static 'img/blog/1.jpg' %}">
+							<div class="post-date">
+								<h3>23</h3>
+								<p>March<br>2019</p>
+							</div>
+						</div>
+						<div class="blog-content">
+							<h2><a href="{% url 'post' %}">10 Essential photography tips</a></h2>
+							<div class="blog-metas">
+								<div class="blog-meta">By Avtukhov Pavel</div>
+								<div class="blog-meta">in Photography</div>
+								<div class="blog-meta">2 Comments</div>
+							</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero mauris, bibendum eget sapien ac, ultrices rhoncus ipsum. Donec nec sapien in urna fermentum ornare. Morbi vel ultrices leo. Sed eu turpis eu arcu vehicula fringilla ut vitae orci. Suspendisse maximus malesuada  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero mauris, bibendum eget sapien ac, ultrices rhoncus ipsum. Donec nec sapien in urna fermentum ornare. Morbi vel ultrices leo. Sed eu turpis eu arcu vehicula fringilla ut vitae orci. Suspendisse maximus malesuada.  </p>
+						</div>
+					</div>
+					<div class="blog-post-item">
+						<div class="blog-thumb set-bg" data-setbg="{% static 'img/blog/2.jpg' %}">
+							<div class="post-date">
+								<h3>23</h3>
+								<p>March<br>2019</p>
+							</div>
+						</div>
+						<div class="blog-content">
+							<h2><a href="{% url 'post' %}">10 Essential photography tips</a></h2>
+							<div class="blog-metas">
+								<div class="blog-meta">By Avtukhov Pavel</div>
+								<div class="blog-meta">in Photography</div>
+								<div class="blog-meta">2 Comments</div>
+							</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero mauris, bibendum eget sapien ac, ultrices rhoncus ipsum. Donec nec sapien in urna fermentum ornare. Morbi vel ultrices leo. Sed eu turpis eu arcu vehicula fringilla ut vitae orci. Suspendisse maximus malesuada  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero mauris, bibendum eget sapien ac, ultrices rhoncus ipsum. Donec nec sapien in urna fermentum ornare. Morbi vel ultrices leo. Sed eu turpis eu arcu vehicula fringilla ut vitae orci. Suspendisse maximus malesuada.  </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Page end -->
+		</div>
+		<div class="copyright"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | ioNiZ
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+	</div>
+	<!-- Main section end -->
+	{% endblock %}

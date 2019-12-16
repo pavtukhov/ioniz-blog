@@ -1,0 +1,69 @@
+{% extends "blog/base.html" %}
+	{% load static %}
+	{% block content %}
+
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Main section start -->
+	<div class="main-site-warp">
+		{% include 'blog/menu.tpl' %}	
+		{% include 'blog/header_content.tpl' %}
+		{% include 'blog/left_side.tpl' %}
+
+			<!-- Page start -->
+			<div class="page-section about-page">
+				<div class="about-section">
+					<div class="video-section set-bg" data-setbg="{% static 'img/about-bg.jpg' %}">
+						<a href="https://www.youtube.com/watch?v=2kf8WNQQPpc" class="video-play-btn video-popup"><i class="fa fa-play"></i></a>
+					</div>
+					<div class="row m-0 milestones">
+						<div class="col-lg-3 col-sm-6 p-0">
+							<div class="milestone">
+								<h2>27</h2>
+								<div class="milestone-info">
+									<h5>Years Of life</h5>
+									<p>Nature Photography</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6 p-0">
+							<div class="milestone">
+								<h2>16k</h2>
+								<div class="milestone-info">
+									<h5>Photograps taken</h5>
+									<p>Nature Photography</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6 p-0">
+							<div class="milestone">
+								<h2>666</h2>
+								<div class="milestone-info">
+									<h5>Blogs</h5>
+									<p>Happy Couples</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6 p-0">
+							<div class="milestone">
+								<h2>37m</h2>
+								<div class="milestone-info">
+									<h5>IG Followers</h5>
+									<p>Thank you</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Page end -->
+		</div>
+		<div class="copyright"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | ioNiZ
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+	</div>
+	<!-- Main section end -->
+	{% endblock %}
